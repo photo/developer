@@ -80,6 +80,13 @@ What this says is that the VM's IP address is 33.33.33.33 and your local host ca
 
 Now that everything is set up you should be able to load a browser and go to [http://local.photo](http://local.photo).
 
+To use MySql you can enter the following information.
+
+1. Host - _localhost_
+1. Username - _root_
+1. Password - (empty)
+1. Database - _photo_
+
 ----------------------------------------
 
 ### Troubleshooting
