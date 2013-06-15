@@ -40,9 +40,17 @@ Using the base box provided by us run the `vagrant box add` command. This is a 6
 
     vagrant box add photo http://photo-developer.s3.amazonaws.com/vagrant-photo-developer-1.0.box
 
-Next you'll need to decide which directory you want to set up your files in. We'll assume it's `%HOME%/dev`. Open a terminal and `cd` into that directory and copy the contents of our [Vagrantfile](https://raw.github.com/photo/developer/master/vagrant/Vagrantfile) into it.
+Next you'll need to decide which directory you want to set up your files in. We'll assume it's `%HOME%/dev/openphoto`. Open a terminal and `cd` into that directory and copy the contents of our [Vagrantfile](https://raw.github.com/photo/developer/master/vagrant/Vagrantfile) into it.
 
     curl -s https://raw.github.com/photo/developer/master/vagrant/Vagrantfile > Vagrantfile
+
+Also clone the frontend repository into this folder
+
+    git clone git@github.com:photo/frontend.git
+    
+or most likely with your repository if you forked it on github
+
+    git clone git@github.com:<username>/frontend.git
 
 Now you can boot your VM and add a host entry pointing to itself.
 
